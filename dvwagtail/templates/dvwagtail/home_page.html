@@ -1,0 +1,15 @@
+{% extends "dvwagtail/base.html" %}
+{% load dvwagtail_tags %}
+
+
+{% block content %}
+    {% include "dvwagtail/includes/carousel.html" with carousel_items=self.carousel_items.all only %}
+
+    {% include "dvwagtail/includes/body.html" with body=self.body only %}
+
+    {% person_listing_homepage %}
+
+    {% blog_listing_homepage %}
+
+    {% event_listing_homepage %}
+{% endblock %}

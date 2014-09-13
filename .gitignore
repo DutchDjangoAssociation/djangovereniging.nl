@@ -1,0 +1,6 @@
+/djangovereniging/settings/local.py
+/static
+*.pyc
+/media
+/virtualenv
+/.idea
