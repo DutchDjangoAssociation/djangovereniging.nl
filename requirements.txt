@@ -6,3 +6,5 @@ django-modelcluster>=0.4
 wagtail>=0.5
 django-taggit>=0.11.2
 django-libsass>=0.2
+django-toolbelt==0.0.1
+gunicorn==18.0
