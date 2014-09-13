@@ -23,6 +23,8 @@ EMAIL_HOST_USER = os.environ['MAILJET_USER']
 EMAIL_HOST_PASSWORD = os.environ['MAILJET_PASSWORD']
 EMAIL_USE_TLS = True
 
+SESSION_COOKIE_SECURE = True
+
 # Use the cached template loader
 TEMPLATE_LOADERS = (
     ('django.template.loaders.cached.Loader', (
