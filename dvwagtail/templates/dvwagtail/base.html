@@ -50,7 +50,7 @@
 
     </head>
 
-    <body class="{% block body_class %}{% endblock %}"> {# Override this block to set custom body classes on a template by template basis #}
+    <body class="{% block body_class %}{% endblock %} "> {# Override this block to set custom body classes on a template by template basis #}
 
         {% wagtailuserbar %}
 
@@ -59,7 +59,7 @@
             {% top_menu parent=site_root calling_page=self %}
         {% endblock %}
 
-        <div class="container" style="margin-top: 30px">
+        <div class="container col-md-8 col-md-offset-2" style="margin-top: 30px">
             <div class="page-header">
                 <h1>Dutch Django association</h1>
             </div>
@@ -99,11 +99,11 @@
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 
         {% compress js %}
-            <script src="{% static "dvwagtail/js/vendor/jquery.bxslider.min.js" %}"></script>
-            <script src="{% static "dvwagtail/js/vendor/fluidvids.js" %}"></script>
+            <script src="{% static 'dvwagtail/js/vendor/jquery.bxslider.min.js' %}"></script>
+            <script src="{% static 'dvwagtail/js/vendor/fluidvids.js' %}"></script>
             {# Custom javascript #}
             {# Local static assets such as css, images and javascrpt should be stored at [yourapp]/static/[yourapp]/... #}
-            <script src="{% static "dvwagtail/js/main.js" %}"></script>
+            <script src="{% static 'dvwagtail/js/main.js' %}"></script>
         {% endcompress %}
 
         {% block extra_js %}{% endblock %} {# Override this block in individual templates in order to add javascript on a template by template basis #}
