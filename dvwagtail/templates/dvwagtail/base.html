@@ -8,7 +8,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>{% block title %}{% if self.seo_title %}{{ self.seo_title }}{% else %}{{ self.title }}{% endif %}{% endblock %}{% block title_postfix %} | Wagtail dvwagtail{% endblock %}</title>
+        <title>{% block title %}{% if self.seo_title %}{{ self.seo_title }}{% else %}{{ self.title }}{% endif %}{% endblock %}{% block title_postfix %} | Dutch Django Association{% endblock %}</title>
 
         <meta name="description" content="{% if self.search_description %}{{ self.search_description }}{% endif %}">
 
@@ -59,14 +59,12 @@
             {% top_menu parent=site_root calling_page=self %}
         {% endblock %}
 
-        <div class="container theme-showcase">
+        <div class="container" style="margin-top: 30px">
             <div class="page-header">
                 <h1>Dutch Django association</h1>
             </div>
             {% block heading %}
-                <div class="page-header">
-                    <h2>{{ self.title }}</h2>
-                </div>
+                <h2>{{ self.title }}</h2>
             {% endblock %}
 
             {% block content %}
