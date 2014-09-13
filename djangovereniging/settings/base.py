@@ -8,8 +8,11 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    ('Erik Romijn', 'github@erik.io'),
+    ('Erik Romijn', 'django@erik.io'),
 )
+
+DEFAULT_FROM_EMAIL = 'django@erik.io'
+SERVER_EMAIL = 'django@erik.io'
 
 MANAGERS = ADMINS
 

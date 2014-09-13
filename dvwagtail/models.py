@@ -470,6 +470,10 @@ class EventIndexPage(Page):
 
         return events
 
+    @property
+    def events_with_past(self):
+        return EventPage.objects.live().descendant_of(self).order_by('-date_from')
+
 EventIndexPage.content_panels = [
     FieldPanel('title', classname="full title"),
     FieldPanel('intro', classname="full"),
