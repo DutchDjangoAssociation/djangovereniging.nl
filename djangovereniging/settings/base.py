@@ -16,9 +16,7 @@ SERVER_EMAIL = 'django@erik.io'
 
 MANAGERS = ADMINS
 
-# Default to dummy email backend. Configure dev/production/local backend
-# as per https://docs.djangoproject.com/en/dev/topics/email/#email-backends
-EMAIL_BACKEND = 'django.core.mail.backends.dummy.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 DATABASES = {
     'default': {
