@@ -5,7 +5,8 @@
 {% if self.date %}
     {% block heading %}
         <div class="page-header">
-            <h2>{{ self.title }} {{ self.date|date:"j F Y" }}</h2>
+            <h2>{{ self.title }}<h2>
+            <h4>{{ self.date|date:"j F Y" }}</h4>
         </div>
     {% endblock %}
 {% endif %}
